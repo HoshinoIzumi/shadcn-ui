@@ -1,11 +1,11 @@
 ---
-title: Alert
+title: Message
 description: Displays a callout for user attention.
 component: true
 ---
 
 <ComponentPreview
-  name="alert-demo"
+  name="message-demo"
   title="An alert with an icon, title and description."
   description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
 />
@@ -42,43 +42,41 @@ npx shadcn-ui@latest add alert
 
 </Tabs>
 
-## Usage
-
-```tsx
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-```
-
-```tsx
-<Alert>
-  <Terminal className="h-4 w-4" />
-  <AlertTitle>Heads up!</AlertTitle>
-  <AlertDescription>
-    You can add components and dependencies to your app using the cli.
-  </AlertDescription>
-</Alert>
-```
-
 ## Examples
 
 ### Default
 
 <ComponentPreview
-  name="alert-demo"
+  name="message-demo"
   title="An alert with an icon, title and description."
   description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
 />
-### WithHover
+### MessageDuration
 
 <ComponentPreview
-  name="alert-hover"
+  name="message-duration"
+  title="An variant alert for information notice"
+  description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+### MessageError
+
+<ComponentPreview
+  name="message-error"
+  title="An variant alert for information notice"
+  description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+### MessageSuccess
+
+<ComponentPreview
+  name="message-success"
   title="An variant alert for information notice"
   description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
 />
 
-### Animation
+### MessageWarning
 
 <ComponentPreview
-  name="alert-animation"
+  name="message-warning"
   title="An variant alert for information notice"
   description="An alert with an icon, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
 />

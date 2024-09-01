@@ -9,15 +9,18 @@ import { AlertCircle, Terminal } from "lucide-react"
 
 import { Alert, AlertDescription, AlertTitle } from "@/registry/sydney/ui/alert"
 
-export default function AlertDemo() {
+export default function AlertHover() {
   return (
     <div style={{ width: "500px" }}>
-      <Alert>
-        <RocketIcon className="h-4 w-4" />
-        <AlertTitle>Heads up!</AlertTitle>
+      <Alert className="relative bg-transparent hover:bg-gray-300 transition-colors duration-500 ease-out hover:text-white">
+        <RocketIcon className="h-4 w-4 absolute left-4 z-10 transition-colors duration-500 text-gray-800 hover:text-white" />
+        <AlertTitle className="relative z-10">Heads up!</AlertTitle>
       </Alert>
-      <br></br>
-      <Alert variant="success">
+      <br />
+      <Alert
+        variant="success"
+        className="relative bg-transparent hover:bg-green-300 transition-colors duration-500 ease-out hover:text-white"
+      >
         <svg
           width="24px"
           height="24px"
@@ -41,10 +44,13 @@ export default function AlertDemo() {
             ></path>
           </g>
         </svg>
-        <AlertTitle>Successful alert</AlertTitle>
+        <AlertTitle className="relative z-10">Successful alert</AlertTitle>
       </Alert>
-      <br></br>
-      <Alert variant="information">
+      <br />
+      <Alert
+        variant="information"
+        className="relative bg-transparent hover:bg-blue-300 transition-colors duration-500 ease-out hover:text-white"
+      >
         <svg
           width="24px"
           height="24px"
@@ -79,10 +85,13 @@ export default function AlertDemo() {
             ></path>
           </g>
         </svg>
-        <AlertTitle>Information alert</AlertTitle>
+        <AlertTitle className="relative z-10">Information alert</AlertTitle>
       </Alert>
-      <br></br>
-      <Alert variant="warning">
+      <br />
+      <Alert
+        variant="warning"
+        className="relative bg-transparent hover:bg-orange-500 transition-colors duration-500 ease-out hover:text-white"
+      >
         <svg
           width="24px"
           height="24px"
@@ -126,10 +135,13 @@ export default function AlertDemo() {
             </g>{" "}
           </g>
         </svg>
-        <AlertTitle>Warning alert</AlertTitle>
+        <AlertTitle className="relative z-10">Warning alert</AlertTitle>
       </Alert>
-      <br></br>
-      <Alert variant="destructive">
+      <br />
+      <Alert
+        variant="destructive"
+        className="relative bg-transparent hover:bg-red-400 transition-colors duration-500 ease-out hover:text-white"
+      >
         <svg
           width="24px"
           height="24px"
@@ -161,7 +173,7 @@ export default function AlertDemo() {
             </g>{" "}
           </g>
         </svg>
-        <AlertTitle>Error alert</AlertTitle>
+        <AlertTitle className="relative z-10">Error alert</AlertTitle>
       </Alert>
     </div>
   )
