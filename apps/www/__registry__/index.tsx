@@ -522,6 +522,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-button")),
+      source: "",
+      files: ["registry/default/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -3830,6 +3841,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/accordion-demo")),
       source: "",
       files: ["registry/new-york/example/accordion-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-button")),
+      source: "",
+      files: ["registry/new-york/example/accordion-button.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -7146,6 +7168,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-button")),
+      source: "",
+      files: ["registry/sydney/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -10454,6 +10487,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/accordion-demo")),
       source: "",
       files: ["registry/unsw/example/accordion-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-button")),
+      source: "",
+      files: ["registry/unsw/example/accordion-button.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
