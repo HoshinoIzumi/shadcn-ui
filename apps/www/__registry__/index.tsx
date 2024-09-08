@@ -533,6 +533,50 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-list")),
+      source: "",
+      files: ["registry/default/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/default/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/default/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-mix")),
+      source: "",
+      files: ["registry/default/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -3852,6 +3896,50 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/accordion-button")),
       source: "",
       files: ["registry/new-york/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-list")),
+      source: "",
+      files: ["registry/new-york/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/new-york/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/new-york/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-mix")),
+      source: "",
+      files: ["registry/new-york/example/accordion-picture-mix.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -7179,6 +7267,50 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-list")),
+      source: "",
+      files: ["registry/sydney/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/sydney/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/sydney/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-mix")),
+      source: "",
+      files: ["registry/sydney/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -10498,6 +10630,50 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/accordion-button")),
       source: "",
       files: ["registry/unsw/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-list")),
+      source: "",
+      files: ["registry/unsw/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/unsw/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/unsw/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-mix")),
+      source: "",
+      files: ["registry/unsw/example/accordion-picture-mix.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []

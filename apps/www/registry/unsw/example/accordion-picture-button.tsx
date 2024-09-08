@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import Image from "next/image"
 
 import {
   Accordion,
@@ -10,15 +11,18 @@ import { Button } from "@/registry/default/ui/button"
 import { Toaster } from "@/registry/default/ui/toaster"
 import { useToast } from "@/registry/default/ui/use-toast"
 
-export default function AccordionButton() {
+export default function AccordionPictureButton() {
   const { toast } = useToast()
-  const buttonText = "Normal Show Toast"
-  const handleClick = (url: any) => () => {
-    window.open(url, "_blank")
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  const handleImageClick = () => {
+    setIsZoomed(!isZoomed)
   }
-  const windowClick = (message: any) => () => {
-    alert(message)
-  }
+
+  const imageStyle = isZoomed
+    ? "w-full cursor-zoom-out"
+    : "w-1/2 cursor-zoom-in"
+
   return (
     <div
       style={{
@@ -33,55 +37,62 @@ export default function AccordionButton() {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>How do I enrol?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="flex flex-col items-center">
+              <div className={imageStyle} onClick={handleImageClick}>
+                <Image
+                  src="https://www.woodsbagot.com/wp-content/uploads/legacy/93/0-2048x1739.jpg"
+                  alt="Description"
+                  width={500}
+                  height={400}
+                  layout="responsive"
+                />
+              </div>
+              <br />
               Once you're ready, enrol online by logging in to Sydney Student.
               Go to "My studies" then "Enrolment" and you're set to go. There
               are several sections to complete as part of your enrolment. You
               can log out and return later if you need to.
-              <br></br>
+              <br />
               <Toaster />
               <Button
-                style={{
-                  backgroundColor: "rgb(0,0,0)",
-                  color: "white",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
+                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
-                  console.log(buttonText, "has clicked")
                   toast({
                     description: "Button click.",
                   })
                 }}
               >
-                Enrol now
+                Learn more
               </Button>
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="item-2">
             <AccordionTrigger>
               Your responsibilities and privacy
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="flex flex-col items-center">
+              <div className={imageStyle} onClick={handleImageClick}>
+                <Image
+                  src="/accordionusyd1.jpg"
+                  alt="Description"
+                  width={500}
+                  height={400}
+                  layout="responsive"
+                />
+              </div>
+              <br />
               Your enrolment comes with certain conditions so it's important to
               understand them. You should also familiarise yourself with our
               privacy policy regarding the personal information you supply
               during enrolment.
-              <br></br>
+              <br />
               <Toaster />
               <Button
-                style={{
-                  backgroundColor: "rgb(249, 115, 22)",
-                  color: "white",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
+                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
-                  console.log(buttonText, "has clicked")
                   toast({
                     description: "Button click.",
                   })
