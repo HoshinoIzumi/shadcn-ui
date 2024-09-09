@@ -877,4 +877,10 @@ export const examples: Registry = [
     type: "components:example",
     files: ["example/chart-tooltip-demo.tsx"],
   },
+  {
+    name: "chat-demo",
+    type: "components:example",
+    registryDependencies: ["card", "button"],
+    files: ["example/chat-demo.tsx"],
+  },
 ]

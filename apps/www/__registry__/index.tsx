@@ -2150,6 +2150,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/default/example/chat-demo")),
+      source: "",
+      files: ["registry/default/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "charts-01": {
       name: "charts-01",
       type: "components:block",
@@ -5458,6 +5469,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/chart-tooltip-demo")),
       source: "",
       files: ["registry/new-york/example/chart-tooltip-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/new-york/example/chat-demo")),
+      source: "",
+      files: ["registry/new-york/example/chat-demo.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -8774,6 +8796,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/sydney/example/chat-demo")),
+      source: "",
+      files: ["registry/sydney/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "charts-01": {
       name: "charts-01",
       type: "components:block",
@@ -12082,6 +12115,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/chart-tooltip-demo")),
       source: "",
       files: ["registry/unsw/example/chart-tooltip-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/unsw/example/chat-demo")),
+      source: "",
+      files: ["registry/unsw/example/chat-demo.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
