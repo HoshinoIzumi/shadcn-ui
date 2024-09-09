@@ -15,7 +15,7 @@ export default function AccordionPictureButton() {
   const { toast } = useToast()
   const [isZoomed, setIsZoomed] = useState(false)
 
-  const handleImageClick = () => {
+  const handleClick = (url: any) => {
     setIsZoomed(!isZoomed)
   }
 
@@ -38,9 +38,9 @@ export default function AccordionPictureButton() {
           <AccordionItem value="item-1">
             <AccordionTrigger>How do I enrol?</AccordionTrigger>
             <AccordionContent className="flex flex-col items-center">
-              <div className={imageStyle} onClick={handleImageClick}>
+              <div className={imageStyle} onClick={handleClick}>
                 <Image
-                  src="https://www.woodsbagot.com/wp-content/uploads/legacy/93/0-2048x1739.jpg"
+                  src="/accordion/usyd1.jpg"
                   alt="Description"
                   width={500}
                   height={400}
@@ -73,7 +73,7 @@ export default function AccordionPictureButton() {
               Your responsibilities and privacy
             </AccordionTrigger>
             <AccordionContent className="flex flex-col items-center">
-              <div className={imageStyle} onClick={handleImageClick}>
+              <div className={imageStyle} onClick={handleClick}>
                 <Image
                   src="/accordionusyd1.jpg"
                   alt="Description"

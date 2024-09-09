@@ -33,7 +33,7 @@ export default function AccordionMix() {
             <AccordionContent className="flex flex-col items-center">
               <div className={imageStyle} onClick={handleImageClick}>
                 <Image
-                  src="/accordion/usyd1.jpg" // 使用相对于 public 目录的路径
+                  src="/accordion/usyd1.jpg"
                   alt="Description"
                   width={500}
                   height={400}
@@ -48,7 +48,7 @@ export default function AccordionMix() {
               <br />
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-black px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
                   toast({
@@ -87,7 +87,7 @@ export default function AccordionMix() {
               <br />
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-black px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
                   toast({
