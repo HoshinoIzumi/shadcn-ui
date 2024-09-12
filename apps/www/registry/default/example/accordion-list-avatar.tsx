@@ -39,15 +39,8 @@ export default function AccordionDemo() {
     fullName: string,
     description: string
   ) => (
-    <DialogContent style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          flex: "none",
-          width: "120px",
-          height: "160px",
-          marginRight: "20px",
-        }}
-      >
+    <DialogContent className="flex items-center">
+      <div className="flex-none w-[120px] h-[160px] mr-5">
         <Image
           src={avatarSrc}
           alt={fullName}
@@ -56,15 +49,13 @@ export default function AccordionDemo() {
           objectFit="cover"
         />
       </div>
-      <div style={{ flex: "1" }}>
-        <div style={{ marginBottom: "10px" }}>
-          <p style={{ color: "#e83e1c", margin: "0", fontWeight: "bold" }}>
-            {role}
-          </p>
-          <p style={{ margin: "0" }}>{fullName}</p>
+      <div className="flex-1">
+        <div className="mb-2.5">
+          <p className="text-red-600 m-0 font-bold">{role}</p>
+          <p className="m-0">{fullName}</p>
         </div>
         <div>
-          <p style={{ color: "grey", margin: "0" }}>{description}</p>
+          <p className="text-gray-500 m-0">{description}</p>
         </div>
       </div>
     </DialogContent>
@@ -85,7 +76,7 @@ export default function AccordionDemo() {
         </Avatar>
       </TableCell>
       <Dialog>
-        <TableCell className="font-medium" style={{ textAlign: "right" }}>
+        <TableCell className="font-medium text-right">
           <DialogTrigger asChild>
             <div
               onClick={() =>
@@ -93,20 +84,12 @@ export default function AccordionDemo() {
                   createDialogContent(avatarSrc, role, fullName, description)
                 )
               }
-              style={{ cursor: "pointer" }}
+              className="cursor-pointer"
             >
-              <p
-                style={{
-                  color: "rgb(249, 115, 22)",
-                  textAlign: "right",
-                  cursor: "pointer",
-                }}
-              >
+              <p className="text-neutral-950 text-right cursor-pointer">
                 {role}
               </p>
-              <p style={{ textAlign: "right", cursor: "pointer" }}>
-                {fullName}
-              </p>
+              <p className="text-right cursor-pointer">{fullName}</p>
             </div>
           </DialogTrigger>
         </TableCell>
@@ -116,16 +99,8 @@ export default function AccordionDemo() {
   )
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "600px",
-        backgroundColor: "rgb(255, 255, 255)",
-      }}
-    >
-      <div style={{ width: "500px", backgroundColor: "rgb(255, 255, 255)" }}>
+    <div className="flex items-center justify-center w-[600px] bg-white">
+      <div className="w-[500px] bg-white">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>Albanese Ministry</AccordionTrigger>

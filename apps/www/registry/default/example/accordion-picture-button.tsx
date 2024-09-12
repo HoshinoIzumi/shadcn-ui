@@ -15,7 +15,7 @@ export default function AccordionPictureButton() {
   const { toast } = useToast()
   const [isZoomed, setIsZoomed] = useState(false)
 
-  const handleClick = (url: any) => {
+  const handleClick = () => {
     setIsZoomed(!isZoomed)
   }
 
@@ -24,17 +24,10 @@ export default function AccordionPictureButton() {
     : "w-1/2 cursor-zoom-in"
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "600px",
-        backgroundColor: "rgb(255, 255, 255)",
-      }}
-    >
-      <div style={{ width: "500px", backgroundColor: "rgb(255, 255, 255)" }}>
+    <div className="flex items-center justify-center w-[600px] bg-white">
+      <div className="w-[500px] bg-white">
         <Accordion type="single" collapsible className="w-full">
+          {/* First Accordion Item */}
           <AccordionItem value="item-1">
             <AccordionTrigger>How do I enrol?</AccordionTrigger>
             <AccordionContent className="flex flex-col items-center">
@@ -47,15 +40,15 @@ export default function AccordionPictureButton() {
                   layout="responsive"
                 />
               </div>
-              <br />
-              Once you're ready, enrol online by logging in to Sydney Student.
-              Go to "My studies" then "Enrolment" and you're set to go. There
-              are several sections to complete as part of your enrolment. You
-              can log out and return later if you need to.
-              <br />
+              <p className="mt-4">
+                Once you're ready, enrol online by logging in to Sydney Student.
+                Go to "My studies" then "Enrolment" and you're set to go. There
+                are several sections to complete as part of your enrolment. You
+                can log out and return later if you need to.
+              </p>
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-zinc-950 px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
                   toast({
@@ -68,6 +61,7 @@ export default function AccordionPictureButton() {
             </AccordionContent>
           </AccordionItem>
 
+          {/* Second Accordion Item */}
           <AccordionItem value="item-2">
             <AccordionTrigger>
               Your responsibilities and privacy
@@ -82,12 +76,12 @@ export default function AccordionPictureButton() {
                   layout="responsive"
                 />
               </div>
-              <br />
-              Your enrolment comes with certain conditions so it's important to
-              understand them. You should also familiarise yourself with our
-              privacy policy regarding the personal information you supply
-              during enrolment.
-              <br />
+              <p className="mt-4">
+                Your enrolment comes with certain conditions, so it's important
+                to understand them. You should also familiarise yourself with
+                our privacy policy regarding the personal information you supply
+                during enrolment.
+              </p>
               <Toaster />
               <Button
                 className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"

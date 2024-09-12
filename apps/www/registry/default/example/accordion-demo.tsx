@@ -9,16 +9,8 @@ import {
 
 export default function AccordionDemo() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "600px",
-        backgroundColor: "rgb(255, 255, 255)",
-      }}
-    >
-      <div style={{ width: "500px", backgroundColor: "rgb(255, 255, 255)" }}>
+    <div className="flex items-center justify-center w-[600px] bg-white">
+      <div className="w-[500px] bg-white">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>Is it accessible?</AccordionTrigger>

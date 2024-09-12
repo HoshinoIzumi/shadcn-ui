@@ -19,17 +19,10 @@ export default function AccordionButton() {
   const windowClick = (message: any) => () => {
     alert(message)
   }
+
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "600px",
-        backgroundColor: "rgb(255, 255, 255)",
-      }}
-    >
-      <div style={{ width: "500px", backgroundColor: "rgb(255, 255, 255)" }}>
+    <div className="flex items-center justify-center w-[600px] bg-neutral">
+      <div className="w-[500px] bg-neutral-50">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>How do I enrol?</AccordionTrigger>
@@ -38,16 +31,10 @@ export default function AccordionButton() {
               Go to "My studies" then "Enrolment" and you're set to go. There
               are several sections to complete as part of your enrolment. You
               can log out and return later if you need to.
-              <br></br>
+              <br />
               <Toaster />
               <Button
-                style={{
-                  backgroundColor: "rgb(0,0,0)",
-                  color: "white",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
+                className="bg-neutral-950 text-neutral-50 py-2 px-4 rounded-md cursor-pointer"
                 variant="outline"
                 onClick={() => {
                   console.log(buttonText, "has clicked")
@@ -60,6 +47,7 @@ export default function AccordionButton() {
               </Button>
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="item-2">
             <AccordionTrigger>
               Your responsibilities and privacy
@@ -69,16 +57,10 @@ export default function AccordionButton() {
               understand them. You should also familiarise yourself with our
               privacy policy regarding the personal information you supply
               during enrolment.
-              <br></br>
+              <br />
               <Toaster />
               <Button
-                style={{
-                  backgroundColor: "rgb(0, 0, 0)",
-                  color: "white",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
+                className="bg-neutral-950 text-neutral-50 py-2 px-4 rounded-md cursor-pointer"
                 variant="outline"
                 onClick={() => {
                   console.log(buttonText, "has clicked")
