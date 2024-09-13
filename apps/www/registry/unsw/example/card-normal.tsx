@@ -17,12 +17,15 @@ export function CardWithNormal() {
       </CardHeader>
       <CardContent className="p-4">
         <CardDescription className="text-sm mb-4">
-          Submit a partnership enquiry or make a donation by contacting
-          <br /> the University revenue team.
+          Submit a partnership enquiry or make a donation by contacting the
+          University revenue team.
         </CardDescription>
-        <Button className="w-full py-2 px-4 ">Explore more →</Button>
+        <Button className="w-full py-2 px-4 bg-orange-500 hover:bg-orange-700 text-white">
+          Explore more →
+        </Button>
       </CardContent>
     </Card>
   )
 }
+
 export default CardWithNormal
