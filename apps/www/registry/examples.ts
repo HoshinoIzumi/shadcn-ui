@@ -883,4 +883,10 @@ export const examples: Registry = [
     registryDependencies: ["card", "button"],
     files: ["example/chat-demo.tsx"],
   },
+  {
+    name: "chat-attachment",
+    type: "components:example",
+    registryDependencies: ["card", "button"],
+    files: ["example/chat-attachment.tsx"],
+  },
 ]
