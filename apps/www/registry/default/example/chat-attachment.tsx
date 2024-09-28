@@ -7,10 +7,10 @@ import { Input } from "@/registry/default/ui/input"
 import { Toaster } from "@/registry/default/ui/toaster"
 import { useToast } from "@/registry/default/ui/use-toast"
 
-export function AttachmentChat() {
+export default function AttachmentChat() {
   interface IMessage {
     text: React.ReactNode
-    type: "sent" | "received" // Restrictions of type ‘sent’ or ‘received’
+    type: string
     fileUrl?: string
     isImage?: boolean
   }
@@ -35,17 +35,19 @@ export function AttachmentChat() {
   }
 
   const sendFiles = (files: File[]) => {
-    const fileMessages: IMessage[] = files.map((file) => {
+    const fileMessages = files.map((file) => {
       const fileUrl = URL.createObjectURL(file)
       const isImage = file.type.startsWith("image/")
       const textContent = isImage ? (
         <img
           src={fileUrl}
           alt={`Thumbnail of ${file.name}`}
-          className="max-w-[100px] max-h-[100px]"
+          style={{ maxWidth: "100px", maxHeight: "100px" }}
         />
       ) : (
-        <span className="underline text-white">{file.name}</span>
+        <span style={{ textDecoration: "underline", color: "white" }}>
+          {file.name}
+        </span>
       )
       return {
         text: textContent,
@@ -64,8 +66,24 @@ export function AttachmentChat() {
   }
 
   const messageStyles = {
-    sent: "bg-black text-white rounded-lg p-3 my-2 break-words max-w-xs",
-    received: "bg-gray-300 text-black rounded-lg p-3 my-2 break-words max-w-xs",
+    sent: {
+      backgroundColor: "black",
+      color: "white",
+      borderRadius: "10px",
+      padding: "12px",
+      margin: "5px 0",
+      wordBreak: "break-word",
+      maxWidth: "300px",
+    },
+    received: {
+      backgroundColor: "lightgrey",
+      color: "black",
+      borderRadius: "10px",
+      padding: "12px",
+      margin: "5px 0",
+      wordBreak: "break-word",
+      maxWidth: "300px",
+    },
   }
 
   return (
@@ -77,8 +95,10 @@ export function AttachmentChat() {
       >
         <CardHeader className="bg-gray-100 p-4 flex justify-between items-left">
           <div>
-            <div className="font-bold">Sofia Davis</div>
-            <div className="text-sm text-gray-500">m@example.com</div>
+            <div style={{ fontWeight: "bold" }}>Sofia Davis</div>
+            <div style={{ fontSize: "0.875rem", color: "#999999" }}>
+              m@example.com
+            </div>
           </div>
         </CardHeader>
 
@@ -90,13 +110,13 @@ export function AttachmentChat() {
                 message.type === "sent" ? "justify-end" : "justify-start"
               }`}
             >
-              <span className={messageStyles[message.type]}>
+              <span style={messageStyles[message.type]}>
                 {message.fileUrl ? (
                   <a
                     href={message.fileUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline text-blue-600"
+                    style={{ textDecoration: "underline", color: "blue" }}
                   >
                     {message.text}
                   </a>
@@ -116,8 +136,8 @@ export function AttachmentChat() {
             />
             <Button
               variant="destructive"
-              className="mr-2 p-1.5"
-              onClick={() => document.getElementById("file-upload")?.click()}
+              style={{ marginRight: "8px", padding: "4px 6px" }}
+              onClick={() => document.getElementById("file-upload").click()}
             >
               <span className="flex items-center gap-2">
                 <Upload className="file-upload-icon" />
@@ -135,7 +155,7 @@ export function AttachmentChat() {
             <Button
               variant="destructive"
               disabled={!newMessage.trim()}
-              className="mr-2 p-1.5"
+              style={{ marginRight: "8px", padding: "4px 6px" }}
               onClick={() => {
                 if (newMessage.trim()) {
                   setMessages([...messages, { text: newMessage, type: "sent" }])
