@@ -7,12 +7,8 @@ import { Input } from "@/registry/default/ui/input"
 import { Toaster } from "@/registry/default/ui/toaster"
 import { useToast } from "@/registry/default/ui/use-toast"
 
-type MessageType = "sent" | "received"
-
-export function NormalChat() {
-  const [messages, setMessages] = useState<
-    Array<{ text: string; type: MessageType }>
-  >([
+export default function NormalChat() {
+  const [messages, setMessages] = useState([
     { text: "Hi, how can I help you today?", type: "received" },
     { text: "Hey, I'm having trouble with my account.", type: "sent" },
     { text: "What seems to be the problem?", type: "received" },
@@ -31,7 +27,7 @@ export function NormalChat() {
     })
   }
 
-  const sendMessage = (e: React.FormEvent) => {
+  const sendMessage = (e) => {
     e.preventDefault()
     if (!newMessage.trim()) return
     setMessages([...messages, { text: newMessage, type: "sent" }])
@@ -46,7 +42,7 @@ export function NormalChat() {
       borderRadius: "10px",
       padding: "12px",
       margin: "5px 0",
-      wordBreak: "break-all" as const,
+      wordBreak: "break-word",
       maxWidth: "300px",
     },
     received: {
@@ -55,7 +51,7 @@ export function NormalChat() {
       borderRadius: "10px",
       padding: "12px",
       margin: "5px 0",
-      wordBreak: "break-all" as const,
+      wordBreak: "break-word",
       maxWidth: "300px",
     },
   }
@@ -64,10 +60,10 @@ export function NormalChat() {
     <>
       <Toaster />
       <Card
-        className="w-full max-w-md overflow-hidden rounded-lg bg-white shadow-sm"
+        className="w-full max-w-md bg-white rounded-lg shadow-sm overflow-hidden"
         style={{ width: "500px" }}
       >
-        <CardHeader className="items-left flex justify-between bg-gray-100 p-4">
+        <CardHeader className="bg-gray-100 p-4 flex justify-between items-left">
           <div>
             <div style={{ fontWeight: "bold" }}>Sofia Davis</div>
             <div style={{ fontSize: "0.875rem", color: "#999999" }}>
@@ -87,11 +83,11 @@ export function NormalChat() {
               <span style={messageStyles[message.type]}>{message.text}</span>
             </div>
           ))}
-          <form className="mt-2 flex" onSubmit={sendMessage}>
+          <form className="flex mt-2">
             <Input
               type="text"
               placeholder="Type your message..."
-              className="mr-2 flex-grow rounded-full border-gray-300 p-2"
+              className="flex-grow border-gray-300 rounded-full p-2 mr-2"
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
             />
@@ -99,7 +95,7 @@ export function NormalChat() {
               variant="destructive"
               disabled={!newMessage.trim()}
               style={{ marginRight: "8px", padding: "4px 6px" }}
-              type="submit"
+              onClick={sendMessage}
             >
               <span className="flex items-center gap-2">
                 <SendHorizontal className="sent-icon" />
@@ -111,5 +107,3 @@ export function NormalChat() {
     </>
   )
 }
-
-export default NormalChat

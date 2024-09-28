@@ -7,10 +7,10 @@ import { Input } from "@/registry/default/ui/input"
 import { Toaster } from "@/registry/default/ui/toaster"
 import { useToast } from "@/registry/default/ui/use-toast"
 
-export function AttachmentChat() {
+export default function AttachmentChat() {
   interface IMessage {
     text: React.ReactNode
-    type: "sent" | "received" // Limiting type to 'sent' and 'received'
+    type: string
     fileUrl?: string
     isImage?: boolean
   }
@@ -35,7 +35,7 @@ export function AttachmentChat() {
   }
 
   const sendFiles = (files: File[]) => {
-    const fileMessages: IMessage[] = files.map((file) => {
+    const fileMessages = files.map((file) => {
       const fileUrl = URL.createObjectURL(file)
       const isImage = file.type.startsWith("image/")
       const textContent = isImage ? (
@@ -51,7 +51,7 @@ export function AttachmentChat() {
       )
       return {
         text: textContent,
-        type: "sent", // Ensure type is "sent"
+        type: "sent",
         fileUrl,
         isImage,
       }
@@ -137,7 +137,7 @@ export function AttachmentChat() {
             <Button
               variant="destructive"
               style={{ marginRight: "8px", padding: "4px 6px" }}
-              onClick={() => document.getElementById("file-upload")?.click()}
+              onClick={() => document.getElementById("file-upload").click()}
             >
               <span className="flex items-center gap-2">
                 <Upload className="file-upload-icon" />
