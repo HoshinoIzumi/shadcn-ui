@@ -1004,4 +1004,9 @@ export const examples: Registry = [
     type: "components:example",
     files: ["example/chart-tooltip-demo.tsx"],
   },
+  {
+    name: "watermark-demo",
+    type: "components:example",
+    files: ["example/watermark-demo.tsx"],
+  },
 ]
