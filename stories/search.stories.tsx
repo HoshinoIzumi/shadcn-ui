@@ -11,7 +11,7 @@ export default {
     buttonColor: {
       control: "color",
       description: "Button background color",
-      defaultValue: "#007bff",
+      defaultValue: "#000000",
     },
     placeholderText: {
       control: "text",
@@ -51,7 +51,7 @@ const Template: Story = ({ buttonColor, placeholderText, formWidth, buttonText }
 // Default story with customizable controls
 export const Default = Template.bind({});
 Default.args = {
-  buttonColor: "#007bff",
+  buttonColor: "#000000",
   placeholderText: "Find Anything...",
   formWidth: "w-2/3",
   buttonText: "Search",
