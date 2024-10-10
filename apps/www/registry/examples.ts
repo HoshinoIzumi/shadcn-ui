@@ -188,6 +188,42 @@ export const examples: Registry = [
     files: ["example/card-demo.tsx"],
   },
   {
+    name: "card-normal",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-normal.tsx"],
+  },
+  {
+    name: "card-image",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-image.tsx"],
+  },
+  {
+    name: "card-large-header",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-large-header.tsx"],
+  },
+  {
+    name: "card-with-action",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-with-action.tsx"],
+  },
+  {
+    name: "card-with-drawer",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-with-drawer.tsx"],
+  },
+  {
+    name: "card-dynamic",
+    type: "components:example",
+    registryDependencies: ["card", "button", "switch"],
+    files: ["example/card-dynamic.tsx"],
+  },
+  {
     name: "card-with-form",
     type: "components:example",
     registryDependencies: ["button", "card", "input", "label", "select"],
@@ -955,5 +991,10 @@ export const examples: Registry = [
     name: "chart-tooltip-demo",
     type: "components:example",
     files: ["example/chart-tooltip-demo.tsx"],
+  },
+  {
+    name: "watermark-demo",
+    type: "components:example",
+    files: ["example/watermark-demo.tsx"],
   },
 ]

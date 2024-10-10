@@ -3,7 +3,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["app/**/*.{ts,tsx}","components/**/*.{ts,tsx}","stories/**/*.{ts,tsx}","apps/www/registry/default/example/**/*.{ts,tsx}"],
+  content: ["app/**/*.{ts,tsx}","components/**/*.{ts,tsx}","stories/**/*.{js,jsx,ts,tsx}","apps/www/registry/default/example/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -47,6 +47,26 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      }, 
+      spacing: {
+        '1/12': '8.333333%',
+        '2/12': '16.666667%',
+        '3/12': '25%',
+        '4/12': '33.333333%',
+        '5/12': '41.666667%',
+        '6/12': '50%',
+        '7/12': '58.333333%',
+        '8/12': '66.666667%',
+        '9/12': '75%',
+        '10/12': '83.333333%',
+        '11/12': '91.666667%',
+        '1/8': '12.5%',
+        '2/8': '25%',
+        '3/8': '37.5%',
+        '4/8': '50%',
+        '5/8': '62.5%',
+        '6/8': '75%',
+        '7/8': '87.5%',
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

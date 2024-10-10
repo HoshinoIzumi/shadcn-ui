@@ -852,6 +852,72 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "card-normal": {
+      name: "card-normal",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-normal")),
+      source: "",
+      files: ["registry/default/example/card-normal.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-image": {
+      name: "card-image",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-image")),
+      source: "",
+      files: ["registry/default/example/card-image.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-large-header": {
+      name: "card-large-header",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-large-header")),
+      source: "",
+      files: ["registry/default/example/card-large-header.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-action": {
+      name: "card-with-action",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-with-action")),
+      source: "",
+      files: ["registry/default/example/card-with-action.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-drawer": {
+      name: "card-with-drawer",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-with-drawer")),
+      source: "",
+      files: ["registry/default/example/card-with-drawer.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-dynamic": {
+      name: "card-dynamic",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/default/example/card-dynamic")),
+      source: "",
+      files: ["registry/default/example/card-dynamic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "card-with-form": {
       name: "card-with-form",
       type: "components:example",
@@ -4303,6 +4369,72 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/card-demo")),
       source: "",
       files: ["registry/new-york/example/card-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-normal": {
+      name: "card-normal",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-normal")),
+      source: "",
+      files: ["registry/new-york/example/card-normal.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-image": {
+      name: "card-image",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-image")),
+      source: "",
+      files: ["registry/new-york/example/card-image.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-large-header": {
+      name: "card-large-header",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-large-header")),
+      source: "",
+      files: ["registry/new-york/example/card-large-header.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-action": {
+      name: "card-with-action",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-with-action")),
+      source: "",
+      files: ["registry/new-york/example/card-with-action.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-drawer": {
+      name: "card-with-drawer",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-with-drawer")),
+      source: "",
+      files: ["registry/new-york/example/card-with-drawer.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-dynamic": {
+      name: "card-dynamic",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/new-york/example/card-dynamic")),
+      source: "",
+      files: ["registry/new-york/example/card-dynamic.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -7762,6 +7894,72 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "card-normal": {
+      name: "card-normal",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-normal")),
+      source: "",
+      files: ["registry/sydney/example/card-normal.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-image": {
+      name: "card-image",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-image")),
+      source: "",
+      files: ["registry/sydney/example/card-image.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-large-header": {
+      name: "card-large-header",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-large-header")),
+      source: "",
+      files: ["registry/sydney/example/card-large-header.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-action": {
+      name: "card-with-action",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-with-action")),
+      source: "",
+      files: ["registry/sydney/example/card-with-action.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-drawer": {
+      name: "card-with-drawer",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-with-drawer")),
+      source: "",
+      files: ["registry/sydney/example/card-with-drawer.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-dynamic": {
+      name: "card-dynamic",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/sydney/example/card-dynamic")),
+      source: "",
+      files: ["registry/sydney/example/card-dynamic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "card-with-form": {
       name: "card-with-form",
       type: "components:example",
@@ -11213,6 +11411,72 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/card-demo")),
       source: "",
       files: ["registry/unsw/example/card-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-normal": {
+      name: "card-normal",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-normal")),
+      source: "",
+      files: ["registry/unsw/example/card-normal.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-image": {
+      name: "card-image",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-image")),
+      source: "",
+      files: ["registry/unsw/example/card-image.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-large-header": {
+      name: "card-large-header",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-large-header")),
+      source: "",
+      files: ["registry/unsw/example/card-large-header.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-action": {
+      name: "card-with-action",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-with-action")),
+      source: "",
+      files: ["registry/unsw/example/card-with-action.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-with-drawer": {
+      name: "card-with-drawer",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-with-drawer")),
+      source: "",
+      files: ["registry/unsw/example/card-with-drawer.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "card-dynamic": {
+      name: "card-dynamic",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: React.lazy(() => import("@/registry/unsw/example/card-dynamic")),
+      source: "",
+      files: ["registry/unsw/example/card-dynamic.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
