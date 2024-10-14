@@ -69,7 +69,7 @@ export default function AccordionPictureButton() {
             <AccordionContent className="flex flex-col items-center">
               <div className={imageStyle} onClick={handleClick}>
                 <Image
-                  src="/accordionusyd1.jpg"
+                  src="/accordion/usyd1.jpg"
                   alt="Description"
                   width={500}
                   height={400}
