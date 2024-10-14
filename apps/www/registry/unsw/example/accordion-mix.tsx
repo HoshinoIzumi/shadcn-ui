@@ -33,7 +33,7 @@ export default function AccordionMix() {
             <AccordionContent className="flex flex-col items-center">
               <div className={imageStyle} onClick={handleImageClick}>
                 <Image
-                  src="/accordion/usyd1.jpg" // 使用相对于 public 目录的路径
+                  src="/accordion/usyd1.jpg"
                   alt="Description"
                   width={500}
                   height={400}
