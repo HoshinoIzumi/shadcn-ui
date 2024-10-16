@@ -228,8 +228,18 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Links",
+          href: "/docs/components/links",
+          items: [],
+        },
+        {
           title: "Menubar",
           href: "/docs/components/menubar",
+          items: [],
+        },
+        {
+          title: "Message",
+          href: "/docs/components/message",
           items: [],
         },
         {
@@ -337,11 +347,21 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/tooltip",
           items: [],
         },
-          {
-            title: "Panel",
-            href: "/docs/components/panel",
-            items: [],
-          },
+        {
+          title: "Tour",
+          href: "/docs/components/tour",
+          items: [],
+        },
+        {
+          title: "Watermark",
+          href: "/docs/components/watermark",
+          items: [],
+        },
+        {
+          title: "Panel",
+          href: "/docs/components/panel",
+          items: [],
+        },
       ],
     },
   ],
