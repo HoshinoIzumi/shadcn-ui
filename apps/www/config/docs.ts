@@ -253,6 +253,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Panel",
+          href: "/docs/components/panel",
+          items: [],
+        },
+        {
           title: "Popover",
           href: "/docs/components/popover",
           items: [],
@@ -357,11 +362,7 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/watermark",
           items: [],
         },
-        {
-          title: "Panel",
-          href: "/docs/components/panel",
-          items: [],
-        },
+
       ],
     },
   ],
