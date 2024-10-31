@@ -5,30 +5,22 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/registry/default/ui/accordion"
+} from "@/registry/sydney/ui/accordion"
 import {
   Table,
   TableBody,
   TableCell,
   TableRow,
-} from "@/registry/default/ui/table"
-import { Toaster } from "@/registry/default/ui/toaster"
-import { useToast } from "@/registry/default/ui/use-toast"
+} from "@/registry/sydney/ui/table"
+import { Toaster } from "@/registry/sydney/ui/toaster"
+import { useToast } from "@/registry/sydney/ui/use-toast"
 
 export default function AccordionList() {
   const { toast } = useToast()
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "600px",
-        backgroundColor: "rgb(255, 255, 255)",
-      }}
-    >
-      <div style={{ width: "500px", backgroundColor: "rgb(255, 255, 255)" }}>
+    <div className="flex items-center justify-center w-[600px] bg-white">
+      <div className="w-[500px] bg-white">
         <Accordion type="single" collapsible className="w-full">
           {/* First Accordion Item */}
           <AccordionItem value="item-1">
@@ -46,7 +38,7 @@ export default function AccordionList() {
                     <TableRow key={location}>
                       <Toaster />
                       <TableCell
-                        className="font-medium"
+                        className="font-medium cursor-pointer"
                         onClick={() => {
                           toast({ description: location })
                         }}
@@ -81,7 +73,7 @@ export default function AccordionList() {
                     <TableRow key={faculty}>
                       <Toaster />
                       <TableCell
-                        className="font-medium"
+                        className="font-medium cursor-pointer"
                         onClick={() => {
                           toast({ description: faculty })
                         }}

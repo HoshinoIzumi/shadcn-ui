@@ -22,14 +22,19 @@ AccordionItem.displayName = "AccordionItem"
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & {
+    hoverColor?: string
+    borderColor?: string
+  }
+>(({ className, children, hoverColor = "gray-200", borderColor = "blue-500", ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
         "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
-        "data-[state=open]>svg:rotate-180"
+        `hover:bg-${hoverColor} hover:border-l-4 border-${borderColor}`,
+        "[&[data-state=open]>svg]:rotate-180",
+        className
       )}
       {...props}
     >
@@ -53,7 +58,7 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className="pb-4 pt-0">{children}</div> {/* Tailwind padding */}
+    <div className="pb-4 pt-0">{children}</div>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName

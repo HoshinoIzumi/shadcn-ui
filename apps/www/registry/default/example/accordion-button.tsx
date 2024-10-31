@@ -13,13 +13,13 @@ import { useToast } from "@/registry/default/ui/use-toast"
 export default function AccordionButton() {
   const { toast } = useToast()
   const buttonText = "Normal Show Toast"
-  const handleClick = (url: any) => () => {
-    window.open(url, "_blank")
-  }
-  const windowClick = (message: any) => () => {
-    alert(message)
-  }
-
+  const handleClick = (url: string) => () => {
+    window.open(url, "_blank");
+  };
+  const windowClick = (message: string) => () => {
+    alert(message);
+  };
+  
   return (
     <div className="flex items-center justify-center w-[600px] bg-neutral">
       <div className="w-[500px] bg-neutral-50">

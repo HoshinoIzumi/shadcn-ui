@@ -7,10 +7,10 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/registry/default/ui/accordion"
-import { Button } from "@/registry/default/ui/button"
-import { Toaster } from "@/registry/default/ui/toaster"
-import { useToast } from "@/registry/default/ui/use-toast"
+} from "@/registry/new-york/ui/accordion"
+import { Button } from "@/registry/new-york/ui/button"
+import { Toaster } from "@/registry/new-york/ui/toaster"
+import { useToast } from "@/registry/new-york/ui/use-toast"
 
 export default function AccordionMix() {
   const { toast } = useToast()
@@ -25,15 +25,15 @@ export default function AccordionMix() {
     : "w-1/2 cursor-zoom-in"
 
   return (
-    <div className="flex items-center justify-center w-[600px] bg-white">
-      <div className="w-[500px] bg-white">
+    <div className="flex items-center justify-center w-[600px] bg-neutral-50">
+      <div className="w-[500px] bg-neutral-50">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>How do I enrol?</AccordionTrigger>
             <AccordionContent className="flex flex-col items-center">
               <div className={imageStyle} onClick={handleImageClick}>
                 <Image
-                  src="/accordion/usyd1.jpg" 
+                  src="/accordion/usyd1.jpg"
                   alt="Description"
                   width={500}
                   height={400}
@@ -48,7 +48,7 @@ export default function AccordionMix() {
               <br />
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-neutral-950 px-4 py-2 text-neutral-50"
                 variant="outline"
                 onClick={() => {
                   toast({
@@ -87,7 +87,7 @@ export default function AccordionMix() {
               <br />
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-neutral-950 px-4 py-2 text-neutral-50"
                 variant="outline"
                 onClick={() => {
                   toast({

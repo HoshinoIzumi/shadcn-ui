@@ -48,7 +48,7 @@ export default function AccordionPictureButton() {
               </p>
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-zinc-950 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-black px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
                   toast({
@@ -84,7 +84,7 @@ export default function AccordionPictureButton() {
               </p>
               <Toaster />
               <Button
-                className="my-4 cursor-pointer rounded-md bg-orange-500 px-4 py-2 text-white"
+                className="my-4 cursor-pointer rounded-md bg-black px-4 py-2 text-white"
                 variant="outline"
                 onClick={() => {
                   toast({
