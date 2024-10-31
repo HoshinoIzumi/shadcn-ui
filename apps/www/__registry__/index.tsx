@@ -2359,6 +2359,72 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "modal-demo": {
+      name: "modal-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-demo")),
+      source: "",
+      files: ["registry/default/example/modal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-confirm": {
+      name: "modal-confirm",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-confirm")),
+      source: "",
+      files: ["registry/default/example/modal-confirm.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-login": {
+      name: "modal-login",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-login")),
+      source: "",
+      files: ["registry/default/example/modal-login.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-notice": {
+      name: "modal-notice",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-notice")),
+      source: "",
+      files: ["registry/default/example/modal-notice.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-pic": {
+      name: "modal-pic",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-pic")),
+      source: "",
+      files: ["registry/default/example/modal-pic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-signup": {
+      name: "modal-signup",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/modal-signup")),
+      source: "",
+      files: ["registry/default/example/modal-signup.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "mode-toggle": {
       name: "mode-toggle",
       type: "components:example",
@@ -6030,6 +6096,72 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/typography-table")),
       source: "",
       files: ["registry/new-york/example/typography-table.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-demo": {
+      name: "modal-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-demo")),
+      source: "",
+      files: ["registry/new-york/example/modal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-confirm": {
+      name: "modal-confirm",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-confirm")),
+      source: "",
+      files: ["registry/new-york/example/modal-confirm.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-login": {
+      name: "modal-login",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-login")),
+      source: "",
+      files: ["registry/new-york/example/modal-login.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-notice": {
+      name: "modal-notice",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-notice")),
+      source: "",
+      files: ["registry/new-york/example/modal-notice.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-pic": {
+      name: "modal-pic",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-pic")),
+      source: "",
+      files: ["registry/new-york/example/modal-pic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-signup": {
+      name: "modal-signup",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/modal-signup")),
+      source: "",
+      files: ["registry/new-york/example/modal-signup.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -9709,6 +9841,72 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "modal-demo": {
+      name: "modal-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-demo")),
+      source: "",
+      files: ["registry/sydney/example/modal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-confirm": {
+      name: "modal-confirm",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-confirm")),
+      source: "",
+      files: ["registry/sydney/example/modal-confirm.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-login": {
+      name: "modal-login",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-login")),
+      source: "",
+      files: ["registry/sydney/example/modal-login.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-notice": {
+      name: "modal-notice",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-notice")),
+      source: "",
+      files: ["registry/sydney/example/modal-notice.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-pic": {
+      name: "modal-pic",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-pic")),
+      source: "",
+      files: ["registry/sydney/example/modal-pic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-signup": {
+      name: "modal-signup",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/modal-signup")),
+      source: "",
+      files: ["registry/sydney/example/modal-signup.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "mode-toggle": {
       name: "mode-toggle",
       type: "components:example",
@@ -13380,6 +13578,72 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/typography-table")),
       source: "",
       files: ["registry/unsw/example/typography-table.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-demo": {
+      name: "modal-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-demo")),
+      source: "",
+      files: ["registry/unsw/example/modal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-confirm": {
+      name: "modal-confirm",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-confirm")),
+      source: "",
+      files: ["registry/unsw/example/modal-confirm.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-login": {
+      name: "modal-login",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-login")),
+      source: "",
+      files: ["registry/unsw/example/modal-login.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-notice": {
+      name: "modal-notice",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-notice")),
+      source: "",
+      files: ["registry/unsw/example/modal-notice.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-pic": {
+      name: "modal-pic",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-pic")),
+      source: "",
+      files: ["registry/unsw/example/modal-pic.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "modal-signup": {
+      name: "modal-signup",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/modal-signup")),
+      source: "",
+      files: ["registry/unsw/example/modal-signup.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
