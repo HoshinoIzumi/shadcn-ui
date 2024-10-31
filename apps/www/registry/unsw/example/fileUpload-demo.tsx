@@ -30,6 +30,7 @@ export default function FileUploadComponent() {
         <div className="file-upload-control">
           <Button
             asChild
+            className="bg-blue-600"
             variant="outline"
             size="default"
             onClick={triggerFileInputClick} // Use the trigger function with null check

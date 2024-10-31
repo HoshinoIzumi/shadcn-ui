@@ -456,6 +456,21 @@ export const examples: Registry = [
     files: ["example/dropdown-menu-with-search.tsx"],
   },
   {
+    name: "fileUpload-demo",
+    type: "components:example",
+    files: ["example/fileUpload-demo.tsx"],
+  },
+  {
+    name: "fileUpload-format",
+    type: "components:example",
+    files: ["example/fileUpload-format.tsx"],
+  },
+  {
+    name: "fileUpload-preview",
+    type: "components:example",
+    files: ["example/fileUpload-preview.tsx"],
+  },
+  {
     name: "hover-card-demo",
     type: "components:example",
     registryDependencies: ["hover-card"],
@@ -1009,19 +1024,5 @@ export const examples: Registry = [
     type: "components:example",
     files: ["example/watermark-demo.tsx"],
   },
-  {
-    name: "fileUpload-demo",
-    type: "components:example",
-    files: ["example/fileUpload-demo.tsx"],
-  },
-  {
-    name: "fileUpload-format",
-    type: "components:example",
-    files: ["example/fileUpload-format.tsx"],
-  },
-  {
-    name: "fileUpload-preview",
-    type: "components:example",
-    files: ["example/fileUpload-preview.tsx"],
-  },
+
 ]

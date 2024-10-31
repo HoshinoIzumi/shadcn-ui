@@ -41,7 +41,7 @@ export default function FileUploadPreview() {
             asChild
             variant="outline"
             size="default"
-            className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+            className="bg-orange-600 text-white hover:bg-orange-700"
           >
             <span>Choose File</span>
           </Button>

@@ -32,7 +32,7 @@ export default function FileUploadComponent() {
             asChild
             variant="outline"
             size="default"
-            className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+            className="hover:orange-700 bg-orange-600 text-white"
             onClick={triggerFileInputClick} // Use the trigger function with null check
           >
             <span>Choose File</span>
@@ -44,7 +44,7 @@ export default function FileUploadComponent() {
       </div>
       {selectedFile && (
         <div className="file-display-container mt-4">
-          <Button className="bg-usydOrange hover:bg-usydOrangeDark text-white">
+          <Button className="bg-range-600 text-white">
             Upload File
           </Button>
         </div>
