@@ -522,6 +522,61 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-button")),
+      source: "",
+      files: ["registry/default/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-list")),
+      source: "",
+      files: ["registry/default/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/default/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/default/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-mix")),
+      source: "",
+      files: ["registry/default/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -1017,6 +1072,28 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/default/example/chat-demo")),
+      source: "",
+      files: ["registry/default/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-attachment": {
+      name: "chat-attachment",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/default/example/chat-attachment")),
+      source: "",
+      files: ["registry/default/example/chat-attachment.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       type: "components:example",
@@ -1332,6 +1409,39 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/example/dropdown-menu-with-search")),
       source: "",
       files: ["registry/default/example/dropdown-menu-with-search.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-demo": {
+      name: "fileUpload-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/fileUpload-demo")),
+      source: "",
+      files: ["registry/default/example/fileUpload-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-format": {
+      name: "fileUpload-format",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/fileUpload-format")),
+      source: "",
+      files: ["registry/default/example/fileUpload-format.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-preview": {
+      name: "fileUpload-preview",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/fileUpload-preview")),
+      source: "",
+      files: ["registry/default/example/fileUpload-preview.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -4087,6 +4197,61 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-button")),
+      source: "",
+      files: ["registry/new-york/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-list")),
+      source: "",
+      files: ["registry/new-york/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/new-york/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/new-york/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/example/accordion-mix")),
+      source: "",
+      files: ["registry/new-york/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -4582,6 +4747,28 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/new-york/example/chat-demo")),
+      source: "",
+      files: ["registry/new-york/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-attachment": {
+      name: "chat-attachment",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/new-york/example/chat-attachment")),
+      source: "",
+      files: ["registry/new-york/example/chat-attachment.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       type: "components:example",
@@ -4897,6 +5084,39 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/dropdown-menu-with-search")),
       source: "",
       files: ["registry/new-york/example/dropdown-menu-with-search.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-demo": {
+      name: "fileUpload-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/fileUpload-demo")),
+      source: "",
+      files: ["registry/new-york/example/fileUpload-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-format": {
+      name: "fileUpload-format",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/fileUpload-format")),
+      source: "",
+      files: ["registry/new-york/example/fileUpload-format.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-preview": {
+      name: "fileUpload-preview",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/new-york/example/fileUpload-preview")),
+      source: "",
+      files: ["registry/new-york/example/fileUpload-preview.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -7652,6 +7872,61 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-button")),
+      source: "",
+      files: ["registry/sydney/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-list")),
+      source: "",
+      files: ["registry/sydney/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/sydney/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/sydney/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/sydney/example/accordion-mix")),
+      source: "",
+      files: ["registry/sydney/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -8147,6 +8422,28 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/sydney/example/chat-demo")),
+      source: "",
+      files: ["registry/sydney/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-attachment": {
+      name: "chat-attachment",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/sydney/example/chat-attachment")),
+      source: "",
+      files: ["registry/sydney/example/chat-attachment.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       type: "components:example",
@@ -8462,6 +8759,39 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/sydney/example/dropdown-menu-with-search")),
       source: "",
       files: ["registry/sydney/example/dropdown-menu-with-search.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-demo": {
+      name: "fileUpload-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/fileUpload-demo")),
+      source: "",
+      files: ["registry/sydney/example/fileUpload-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-format": {
+      name: "fileUpload-format",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/fileUpload-format")),
+      source: "",
+      files: ["registry/sydney/example/fileUpload-format.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-preview": {
+      name: "fileUpload-preview",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/sydney/example/fileUpload-preview")),
+      source: "",
+      files: ["registry/sydney/example/fileUpload-preview.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -11217,6 +11547,61 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "accordion-button": {
+      name: "accordion-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-button")),
+      source: "",
+      files: ["registry/unsw/example/accordion-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list": {
+      name: "accordion-list",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-list")),
+      source: "",
+      files: ["registry/unsw/example/accordion-list.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-list-avatar": {
+      name: "accordion-list-avatar",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-list-avatar")),
+      source: "",
+      files: ["registry/unsw/example/accordion-list-avatar.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-picture-button": {
+      name: "accordion-picture-button",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-picture-button")),
+      source: "",
+      files: ["registry/unsw/example/accordion-picture-button.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "accordion-mix": {
+      name: "accordion-mix",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/unsw/example/accordion-mix")),
+      source: "",
+      files: ["registry/unsw/example/accordion-picture-mix.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert-demo": {
       name: "alert-demo",
       type: "components:example",
@@ -11712,6 +12097,28 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "chat-demo": {
+      name: "chat-demo",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/unsw/example/chat-demo")),
+      source: "",
+      files: ["registry/unsw/example/chat-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "chat-attachment": {
+      name: "chat-attachment",
+      type: "components:example",
+      registryDependencies: ["card","button"],
+      component: React.lazy(() => import("@/registry/unsw/example/chat-attachment")),
+      source: "",
+      files: ["registry/unsw/example/chat-attachment.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       type: "components:example",
@@ -12027,6 +12434,39 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/dropdown-menu-with-search")),
       source: "",
       files: ["registry/unsw/example/dropdown-menu-with-search.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-demo": {
+      name: "fileUpload-demo",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/fileUpload-demo")),
+      source: "",
+      files: ["registry/unsw/example/fileUpload-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-format": {
+      name: "fileUpload-format",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/fileUpload-format")),
+      source: "",
+      files: ["registry/unsw/example/fileUpload-format.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "fileUpload-preview": {
+      name: "fileUpload-preview",
+      type: "components:example",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/unsw/example/fileUpload-preview")),
+      source: "",
+      files: ["registry/unsw/example/fileUpload-preview.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []

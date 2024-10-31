@@ -8,6 +8,36 @@ export const examples: Registry = [
     files: ["example/accordion-demo.tsx"],
   },
   {
+    name: "accordion-button",
+    type: "components:example",
+    registryDependencies: ["accordion"],
+    files: ["example/accordion-button.tsx"],
+  },
+  {
+    name: "accordion-list",
+    type: "components:example",
+    registryDependencies: ["accordion"],
+    files: ["example/accordion-list.tsx"],
+  },
+  {
+    name: "accordion-list-avatar",
+    type: "components:example",
+    registryDependencies: ["accordion"],
+    files: ["example/accordion-list-avatar.tsx"],
+  },
+  {
+    name: "accordion-picture-button",
+    type: "components:example",
+    registryDependencies: ["accordion"],
+    files: ["example/accordion-picture-button.tsx"],
+  },
+  {
+    name: "accordion-mix",
+    type: "components:example",
+    registryDependencies: ["accordion"],
+    files: ["example/accordion-picture-mix.tsx"],
+  },
+  {
     name: "alert-demo",
     type: "components:example",
     registryDependencies: ["alert"],
@@ -278,6 +308,18 @@ export const examples: Registry = [
     files: ["example/checkbox-demo.tsx"],
   },
   {
+    name: "chat-demo",
+    type: "components:example",
+    registryDependencies: ["card", "button"],
+    files: ["example/chat-demo.tsx"],
+  },
+  {
+    name: "chat-attachment",
+    type: "components:example",
+    registryDependencies: ["card", "button"],
+    files: ["example/chat-attachment.tsx"],
+  },
+  {
     name: "checkbox-disabled",
     type: "components:example",
     registryDependencies: ["checkbox"],
@@ -454,6 +496,21 @@ export const examples: Registry = [
     type: "components:example",
     registryDependencies: ["dropdown-menu", "with-search"],
     files: ["example/dropdown-menu-with-search.tsx"],
+  },
+  {
+    name: "fileUpload-demo",
+    type: "components:example",
+    files: ["example/fileUpload-demo.tsx"],
+  },
+  {
+    name: "fileUpload-format",
+    type: "components:example",
+    files: ["example/fileUpload-format.tsx"],
+  },
+  {
+    name: "fileUpload-preview",
+    type: "components:example",
+    files: ["example/fileUpload-preview.tsx"],
   },
   {
     name: "hover-card-demo",

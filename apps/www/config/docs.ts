@@ -147,6 +147,12 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Chat",
+          href: "/docs/components/chat",
+          label: "New",
+          items: [],
+        },
+        {
           title: "Chart",
           href: "/docs/components/chart",
           label: "New",
@@ -200,6 +206,11 @@ export const docsConfig: DocsConfig = {
         {
           title: "Dropdown Menu",
           href: "/docs/components/dropdown-menu",
+          items: [],
+        },
+        {
+          title: "FileUpload",
+          href: "/docs/components/fileUpload",
           items: [],
         },
         {

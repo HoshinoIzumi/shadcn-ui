@@ -26,23 +26,34 @@ const AccordionTrigger = React.forwardRef<
     hoverColor?: string
     borderColor?: string
   }
->(({ className, children, hoverColor = "gray-200", borderColor = "blue-500", ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={cn(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
-        `hover:bg-${hoverColor} hover:border-l-4 border-${borderColor}`,
-        "[&[data-state=open]>svg]:rotate-180",
-        className
-      )}
-      {...props}
-    >
-      {children}
-      <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
-    </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-))
+>(
+  (
+    {
+      className,
+      children,
+      hoverColor = "gray-200",
+      borderColor = "blue-500",
+      ...props
+    },
+    ref
+  ) => (
+    <AccordionPrimitive.Header className="flex">
+      <AccordionPrimitive.Trigger
+        ref={ref}
+        className={cn(
+          "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
+          `hover:bg-${hoverColor} hover:border-l-4 border-${borderColor}`,
+          "[&[data-state=open]>svg]:rotate-180",
+          className
+        )}
+        {...props}
+      >
+        {children}
+        <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+      </AccordionPrimitive.Trigger>
+    </AccordionPrimitive.Header>
+  )
+)
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
 const AccordionContent = React.forwardRef<

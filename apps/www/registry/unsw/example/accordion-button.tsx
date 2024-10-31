@@ -1,25 +1,25 @@
 import React from "react"
 
+import { Button } from "@/registry/default/ui/button"
+import { Toaster } from "@/registry/default/ui/toaster"
+import { useToast } from "@/registry/default/ui/use-toast"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/registry/unsw/ui/accordion"
-import { Button } from "@/registry/default/ui/button"
-import { Toaster } from "@/registry/default/ui/toaster"
-import { useToast } from "@/registry/default/ui/use-toast"
 
 export default function AccordionButton() {
   const { toast } = useToast()
   const buttonText = "Normal Show Toast"
   const handleClick = (url: string) => () => {
-    window.open(url, "_blank");
-  };
+    window.open(url, "_blank")
+  }
   const windowClick = (message: string) => () => {
-    alert(message);
-  };
-  
+    alert(message)
+  }
+
   return (
     <div className="flex items-center justify-center w-[600px] bg-neutral">
       <div className="w-[500px] bg-neutral-50">
