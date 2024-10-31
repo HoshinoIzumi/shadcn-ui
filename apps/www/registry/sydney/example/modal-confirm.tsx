@@ -23,7 +23,7 @@ export default function ConfirmModal() {
         <DialogTrigger asChild>
           <Button 
           variant="outline"
-          className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
           >
           Submit Application
           </Button>
@@ -42,7 +42,7 @@ export default function ConfirmModal() {
           <DialogFooter className="mt-4 flex justify-center space-x-4">
             <Button
               variant="default"
-              className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+              className="bg-orange-600 hover:bg-orange-700 text-white"
               onClick={() => {
                 toast({ description: "Message has been sent." })
               }}

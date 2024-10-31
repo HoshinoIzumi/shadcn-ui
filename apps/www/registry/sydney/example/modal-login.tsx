@@ -60,7 +60,7 @@ export default function LoginModal() {
         <DialogTrigger asChild>
           <Button 
           variant="outline"
-          className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
           >
             {formMode === "login" ? "Login" : "Sign Up"}
           </Button>
@@ -109,7 +109,7 @@ export default function LoginModal() {
             <DialogFooter>
               <Button 
               variant="destructive"
-              className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+              className="bg-orange-600 hover:bg-orange-700 text-white"
               >
                 {formMode === "signup" ? "Create Account" : "Login"}
               </Button>
@@ -122,7 +122,7 @@ export default function LoginModal() {
               <Button
                 asChild
                 variant="default"
-                className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+                className="bg-orange-600 hover:bg-orange-700 text-white"
                 onClick={switchToSignUp}
               >
                 <span>Sign Up</span>
@@ -134,7 +134,7 @@ export default function LoginModal() {
               <Button
                 asChild
                 variant="default"
-                className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+                className="bg-orange-600 hover:bg-orange-700 text-white"
                 onClick={switchToSignIn}
               >
                 <span>Login Here</span>

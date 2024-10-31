@@ -36,7 +36,7 @@ export default function SignupModal() {
       <DialogTrigger asChild>
         <Button 
         variant="outline"
-        className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+        className="bg-orange-600 hover:bg-orange-700 text-white"
         >
         Sign Up</Button>
       </DialogTrigger>
@@ -62,7 +62,7 @@ export default function SignupModal() {
         <DialogFooter className="mt-6 flex justify-center">
           <Button 
           variant="destructive" 
-          className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
           onClick={handleSignUp}
           >
             Sign Up

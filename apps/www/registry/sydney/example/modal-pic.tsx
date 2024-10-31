@@ -24,7 +24,7 @@ export default function PictureModal() {
         <DialogTrigger asChild>
           <Button 
           variant="outline"
-          className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
           >
           Open Model</Button>
         </DialogTrigger>

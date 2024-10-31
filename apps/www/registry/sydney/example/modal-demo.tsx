@@ -23,7 +23,7 @@ export default function NormalModal() {
         <DialogTrigger asChild>
           <Button 
           variant="outline"
-          className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
           >Open Modal</Button>
         </DialogTrigger>
         <DialogContent
@@ -54,7 +54,7 @@ export default function NormalModal() {
           <DialogFooter>
             <Button
               variant="default"
-              className="bg-usydOrange hover:bg-usydOrangeDark text-white"
+              className="bg-orange-600 hover:bg-orange-700 text-white"
               onClick={() => {
                 toast({ description: "Already Accepted." })
               }}
