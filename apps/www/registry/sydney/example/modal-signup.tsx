@@ -34,11 +34,12 @@ export default function SignupModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button 
-        variant="outline"
-        className="bg-orange-600 hover:bg-orange-700 text-white"
+        <Button
+          variant="outline"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
         >
-        Sign Up</Button>
+          Sign Up
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
@@ -60,10 +61,10 @@ export default function SignupModal() {
           </div>
         </div>
         <DialogFooter className="mt-6 flex justify-center">
-          <Button 
-          variant="destructive" 
-          className="bg-orange-600 hover:bg-orange-700 text-white"
-          onClick={handleSignUp}
+          <Button
+            variant="destructive"
+            className="bg-orange-600 hover:bg-orange-700 text-white"
+            onClick={handleSignUp}
           >
             Sign Up
           </Button>

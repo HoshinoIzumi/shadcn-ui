@@ -21,10 +21,12 @@ export default function NormalModal() {
       <Toaster />
       <Dialog>
         <DialogTrigger asChild>
-          <Button 
-          variant="outline"
-          className="bg-orange-600 hover:bg-orange-700 text-white"
-          >Open Modal</Button>
+          <Button
+            variant="outline"
+            className="bg-orange-600 hover:bg-orange-700 text-white"
+          >
+            Open Modal
+          </Button>
         </DialogTrigger>
         <DialogContent
           style={{ backgroundColor: "white" }}
@@ -62,11 +64,7 @@ export default function NormalModal() {
               Accept
             </Button>
             <DialogClose asChild>
-              <Button
-                variant="secondary"
-              >
-                Decline
-              </Button>
+              <Button variant="secondary">Decline</Button>
             </DialogClose>
           </DialogFooter>
         </DialogContent>

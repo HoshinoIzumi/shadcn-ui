@@ -22,11 +22,12 @@ export default function PictureModal() {
       <Toaster />
       <Dialog>
         <DialogTrigger asChild>
-          <Button 
-          variant="outline"
-          className="bg-orange-600 hover:bg-orange-700 text-white"
+          <Button
+            variant="outline"
+            className="bg-orange-600 hover:bg-orange-700 text-white"
           >
-          Open Model</Button>
+            Open Model
+          </Button>
         </DialogTrigger>
         <DialogContent
           style={{ backgroundColor: "white" }}
@@ -70,9 +71,7 @@ export default function PictureModal() {
               Accept
             </Button>
             <DialogClose asChild>
-              <Button variant="secondary">
-                Cancel
-              </Button>
+              <Button variant="secondary">Cancel</Button>
             </DialogClose>
           </DialogFooter>
         </DialogContent>

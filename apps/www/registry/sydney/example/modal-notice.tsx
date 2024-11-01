@@ -16,11 +16,11 @@ export default function NoticeModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button 
-        variant="outline"
-        className="bg-orange-600 hover:bg-orange-700 text-white"
+        <Button
+          variant="outline"
+          className="bg-orange-600 hover:bg-orange-700 text-white"
         >
-        Submit Application
+          Submit Application
         </Button>
       </DialogTrigger>
       <DialogContent

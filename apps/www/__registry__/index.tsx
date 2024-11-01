@@ -1765,6 +1765,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "search-demo": {
+      name: "search-demo",
+      type: "components:example",
+      registryDependencies: ["search"],
+      component: React.lazy(() => import("@/registry/default/example/search-demo")),
+      source: "",
+      files: ["registry/default/example/search-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "select-demo": {
       name: "select-demo",
       type: "components:example",
@@ -5502,6 +5513,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/new-york/example/scroll-area-horizontal-demo")),
       source: "",
       files: ["registry/new-york/example/scroll-area-horizontal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "search-demo": {
+      name: "search-demo",
+      type: "components:example",
+      registryDependencies: ["search"],
+      component: React.lazy(() => import("@/registry/new-york/example/search-demo")),
+      source: "",
+      files: ["registry/new-york/example/search-demo.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -9247,6 +9269,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "search-demo": {
+      name: "search-demo",
+      type: "components:example",
+      registryDependencies: ["search"],
+      component: React.lazy(() => import("@/registry/sydney/example/search-demo")),
+      source: "",
+      files: ["registry/sydney/example/search-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "select-demo": {
       name: "select-demo",
       type: "components:example",
@@ -12984,6 +13017,17 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/unsw/example/scroll-area-horizontal-demo")),
       source: "",
       files: ["registry/unsw/example/scroll-area-horizontal-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "search-demo": {
+      name: "search-demo",
+      type: "components:example",
+      registryDependencies: ["search"],
+      component: React.lazy(() => import("@/registry/unsw/example/search-demo")),
+      source: "",
+      files: ["registry/unsw/example/search-demo.tsx"],
       category: "undefined",
       subcategory: "undefined",
       chunks: []

@@ -294,6 +294,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Search",
+          href: "/docs/components/search",
+          items: [],
+        },
+        {
           title: "Select",
           href: "/docs/components/select",
           items: [],

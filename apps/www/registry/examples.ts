@@ -687,6 +687,12 @@ export const examples: Registry = [
     files: ["example/scroll-area-horizontal-demo.tsx"],
   },
   {
+    name: "search-demo",
+    type: "components:example",
+    registryDependencies: ["search"],
+    files: ["example/search-demo.tsx"],
+  },
+  {
     name: "select-demo",
     type: "components:example",
     registryDependencies: ["select"],
