@@ -78,7 +78,11 @@ export function BasicSearch() {
               </FormItem>
             )}
           />
-          <Button variant="default" className="bg-orange-600" style={{ marginTop: "5px" }}>
+          <Button
+            variant="default"
+            className="bg-orange-600"
+            style={{ marginTop: "5px" }}
+          >
             Search
           </Button>
         </form>
